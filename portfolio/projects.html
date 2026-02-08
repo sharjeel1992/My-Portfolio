@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects • Sharjeel Khan</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container navInner">
+      <a class="brand" href="index.html"><span class="dot"></span><span>Portfolio.</span></a>
+      <nav class="links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="resume.html">Skills + Resume</a>
+        <a class="btn btnPrimary navCta" href="mailto:khan.sharjeel@icloud.com">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero heroSm">
+      <div class="container heroText">
+        <div class="eyebrow">Projects</div>
+        <h1 class="h1">Case-study ready work.</h1>
+        <p class="subtitle">Four projects with clear outcomes, tech choices, and highlights.</p>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="container">
+        <div id="projectsGrid" class="projectGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="small">© <span id="year"></span> Sharjeel Khan • Built with HTML/CSS/JS</div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/projects-data.js"></script>
+  <script src="../js/project-render.js"></script>
+  <script>
+    renderProjectCards("projectsGrid");
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
